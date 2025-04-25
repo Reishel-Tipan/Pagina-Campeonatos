@@ -1,0 +1,21 @@
+:root {
+    /*fondo claro*/
+    --white: rgb(240, 235, 235);
+    --white-play: #e0e0e0;
+    --letra: black;
+    --white-pure: white;
+    /*modo oscuro*/
+    --black: rgb(0, 0, 0, 0.9);
+    --gray: #4a4a4a;
+    --card-bg: #242424;
+    --accent: #f6ad55;
+    --primary-section: #1a1a1a;
+    --secondary-section: #ff3e3e;
+    --hover: #ff5252;
+    --welcome-section: #cccccc;
+    /*colores aficionales para otras páginas */
+    --secondary-green: #2ecc71;
+    --dark: #1a1a1a;
+    --input-bg: rgba(255, 255, 255, 0.1);
+
+  }

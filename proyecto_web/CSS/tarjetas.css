@@ -1,0 +1,143 @@
+:root {
+    --primary-section: #1a1a1a;
+    --secondary-section: #ff3e3e;
+    --gray: #4a4a4a;
+    --card-bg: #242424;
+    --hover: #ff5252;
+    --text-color: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: var(--white);
+    background-color: var(--primary-section);
+}
+#red{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #a01616;
+}
+#yellow{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: yellow;
+}
+.containerT {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+#card-title {
+    font-size: 3em;
+    color: var(--secondary-section);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.table-cards {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+  
+.table-cards th, .table-cards td {
+    padding: 10px;
+    text-align: center;
+    color: var(--text-color);
+    border: 1px solid var(--gray);
+}
+  
+.table-cards th {
+    background-color: var(--secondary-section);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+.table-cards tr:nth-child(even) {
+    background-color: var(--gray);
+}
+  
+.table-cards tr:hover {
+    background-color: var(--hover);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.mini-cards {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card-group {
+    margin-bottom: 10px; 
+}
+.card-player-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: left;
+}
+.card-player {
+    box-shadow: #3cabe2 0px 0px 20px;
+    height: 270px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.card-header{
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-style:solid;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.card-content{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: var(--primary-section);
+}
+.card-body{
+    border-style: solid;
+    padding: 5px;
+}
+.card-header img {
+    transition: transform 0.5s ease-in-out; 
+}
+.card-header:hover img {
+    animation: rotateBack 1s; 
+}
+@keyframes rotateBack {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg); 
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS//formulario.css" />
+  </head>
+  <body class="body-contact">
+    <div class="contact-container">
+      <div class="contact-wrapper">
+        <form class="contact-form">
+          <div class="form-header">
+            <h2>Contáctanos</h2>
+            <div class="social-icons">
+              <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+              <a href="#"> <i class="fa-brands fa-whatsapp"></i> </a>
+              <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+            </div>
+          </div>
+          <div class="form-group name">
+            <input type="text" name="name" id="name" placeholder="Nombre" />
+          </div>
+          <div class="form-group email">
+            <input type="text" name="email" id="email" placeholder="Email" />
+          </div>
+          <div class="form-group phone">
+            <input type="tel" name="phone" id="phone" placeholder="Teléfono" />
+          </div>
+          <div class="form-group message">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Mensaje"
+            ></textarea>
+          </div>
+          <div class="privacy-checkbox">
+            <input type="checkbox" name="privacy" id="privacy" />
+            <label for="privacy"
+              >He leído y acepto las <a href="#">condiciones de uso</a> y
+              <a href="#">política de privacidad y cookies</a>. Cancelar</label
+            >
+          </div>
+          <div class="btn-grup">
+            <button type="button" class="btn btn-cancel">Cancelar</button>
+            <button type="submit" class="btn btn-send">Enviar</button>
+          </div>
+        </form>
+        <aside class="contact-info">
+          <div class="info-card">
+            <h3>¿Por qué contactarnos?</h3>
+            <p>
+              Somos un equipo comprometido con la excelencia en el fútbol. Ya
+              sea que tengas preguntas sobre membresías, eventos deportivos o
+              quieras formar parte de nuestra comunidad, estamos aquí para
+              ayudarte.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3>Información de Contacto</h3>
+            <div class="contact-method">
+              <i
+                class="fa-sharp-duotone fa-solid fa-location-dot location-icon"
+              ></i>
+              <span>Estadio Principal, Calle Deportiva 123</span>
+            </div>
+            <div class="contact-method">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@gmail.com</span>
+            </div>
+            <div class="contact-method">
+              <i class="fa-solid fa-phone phone-icon"></i>
+              <span>+34 123 456 789</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Horario de Atención</h3>
+            <p>
+              Lunes a Viernes: 9:00 - 20:00<br />
+              Sábados: 10:00 - 14:00<br />
+              Domingos: Cerrado
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

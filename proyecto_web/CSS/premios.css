@@ -1,0 +1,142 @@
+:root {
+    --primary-section: #1a1a1a;
+    --secondary-section: #ff3e3e;
+    --gray: #4a4a4a;
+    --card-bg: #242424;
+    --hover: #ff5252;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--primary-section);
+}
+
+.main-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 3rem;
+    color: var(--secondary-sectio);
+    margin-bottom: 15px;
+    animation: slideIn 1s ease-out;
+}
+
+.header-container p {
+    font-size: 1.2rem;
+    color: rgb(173, 173, 173);
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.prize-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.prize-card {
+    background-color: rgb(69, 68, 68);
+    border-radius: 15px;
+    width: 280px;
+    height: 300px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.686);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    animation: bounceIn 1s ease-out;
+}
+
+.prize-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(103, 24, 24, 0.4);
+}
+
+.card-content {
+    padding: 20px;
+}
+.card-content h4{
+    color: #1a1a1a;
+}
+
+.prize-title {
+    font-size: 1.8rem;
+    color: var(--secondary-section);
+    margin-bottom: 10px;
+    font-weight: 600;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.prize-value {
+    font-size: 1.5rem;
+    color: var(--hover);
+    font-weight: 700;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.prize-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foro de Inquietudes - Tu Club de Fútbol</title>
+
+    <link rel="stylesheet" href="../CSS/base.css" />
+    <link rel="stylesheet" href="../CSS/foro.css" />
+  </head>
+  <body class="body-foro">
+    <header class="header-foro">
+      <div class="container">
+        <h1>Foro de Inquietudes</h1>
+        <p class="forum-description">
+          Bienvenido al espacio donde puedes compartir tus dudas, sugerencias y
+          comentarios sobre nuestro club de fútbol. Estamos aquí para escucharte
+          y ayudarte.
+        </p>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="forum-container">
+        <main class="topics-list">
+          <article class="topic">
+            <h3>¿Cuándo comienza la próxima temporada?</h3>
+            <p>
+              Me gustaría saber las fechas exactas del inicio de la próxima
+              temporada para planificar mi asistencia a los partidos.
+            </p>
+            <div class="topic-meta">
+              <div class="topic-author">
+                <img
+                  src="https://i.pravatar.cc/40?img=1"
+                  alt="Avatar de Juan Pérez"
+                  class="user-avatar"
+                />
+                <span>Juan Pérez</span>
+              </div>
+              <div>
+                <span>Hace 2 días</span> | <span>15 respuestas</span> |
+                <span>89 vistas</span>
+              </div>
+            </div>
+            <div class="topic-tags">
+              <span class="topic-tag">Temporada</span>
+              <span class="topic-tag">Fechas</span>
+            </div>
+          </article>
+          <article class="topic">
+            <h3>Problema con la compra de entradas online</h3>
+            <p>
+              Estoy teniendo dificultades para comprar entradas a través del
+              sitio web. ¿Alguien más ha experimentado problemas similares?
+            </p>
+            <div class="topic-meta">
+              <div class="topic-author">
+                <img
+                  src="https://i.pravatar.cc/40?img=2"
+                  alt="Avatar de María García"
+                  class="user-avatar"
+                />
+                <span>María García</span>
+              </div>
+              <div>
+                <span>Hace 1 semana</span> | <span>8 respuestas</span> |
+                <span>56 vistas</span>
+              </div>
+            </div>
+            <div class="topic-tags">
+              <span class="topic-tag">Entradas</span>
+              <span class="topic-tag">Problemas técnicos</span>
+            </div>
+          </article>
+          <article class="topic">
+            <h3>Sugerencia para mejorar las instalaciones</h3>
+            <p>
+              Creo que sería genial tener más opciones de comida saludable en el
+              estadio. ¿Qué opinan los demás aficionados?
+            </p>
+            <div class="topic-meta">
+              <div class="topic-author">
+                <img
+                  src="https://i.pravatar.cc/40?img=3"
+                  alt="Avatar de Carlos Rodríguez"
+                  class="user-avatar"
+                />
+                <span>Carlos Rodríguez</span>
+              </div>
+              <div>
+                <span>Hace 3 días</span> | <span>22 respuestas</span> |
+                <span>134 vistas</span>
+              </div>
+            </div>
+            <div class="topic-tags">
+              <span class="topic-tag">Instalaciones</span>
+              <span class="topic-tag">Sugerencias</span>
+            </div>
+          </article>
+          <div class="loading" id="loading">Cargando más temas...</div>
+          <div class="pagination">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>Siguiente</button>
+          </div>
+        </main>
+
+        <aside class="sidebar">
+          <form class="search-form">
+            <h2>Buscar Temas</h2>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Escribe tu búsqueda..."
+            />
+            <select id="search-category">
+              <option value="">Todas las categorías</option>
+              <option value="general">General</option>
+              <option value="entradas">Entradas</option>
+              <option value="instalaciones">Instalaciones</option>
+              <option value="jugadores">Jugadores</option>
+            </select>
+            <button type="submit">Buscar</button>
+          </form>
+
+          <form class="new-topic-form">
+            <h2>Crear Nuevo Tema</h2>
+            <input
+              type="text"
+              id="new-topic-title"
+              placeholder="Título del tema"
+            />
+            <select id="new-topic-category">
+              <option value="general">General</option>
+              <option value="entradas">Entradas</option>
+              <option value="instalaciones">Instalaciones</option>
+              <option value="jugadores">Jugadores</option>
+            </select>
+            <textarea
+              id="new-topic-content"
+              placeholder="Describe tu inquietud..."
+            ></textarea>
+            <button type="submit">Publicar Tema</button>
+          </form>
+
+          <div class="forum-stats">
+            <h2>Estadísticas del Foro</h2>
+            <ul>
+              <li><span>Temas totales:</span> <span>1,234</span></li>
+              <li><span>Respuestas totales:</span> <span>5,678</span></li>
+              <li><span>Miembros:</span> <span>10,000</span></li>
+              <li><span>Último miembro:</span> <span>FutbolFan2023</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+  </body>
+</html>

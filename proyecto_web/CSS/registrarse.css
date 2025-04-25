@@ -1,0 +1,120 @@
+:root {
+    --white: #ffffff;
+    --primary-section: #1a1a1a;
+    --secondary-section: #ff3e3e;
+    --gray: #4a4a4a;
+    --card-bg: #242424;
+    --hover: #ff5252;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-section);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../IMG/img-tickeds//city-profesional.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: rgba(36, 36, 36, 0.9);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(255, 62, 62, 0.3);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--secondary-section);
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: none;
+    border-bottom: 2px solid var(--gray);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--secondary-section);
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-section);
+    font-size: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--secondary-section);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--hover);
+    transform: translateY(-2px);
+}
+
+.terms {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--gray);
+}
+
+.terms a {
+    color: var(--secondary-section);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.terms a:hover {
+    color: var(--hover);
+}

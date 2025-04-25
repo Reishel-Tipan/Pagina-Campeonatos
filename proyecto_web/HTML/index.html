@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es" data-theme = "light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InterUrban League 2024</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="../CSS/base.css" />
+    <link rel="stylesheet" href="../CSS/burger.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body>
+    <button class="icon-button button-theme theme">
+      <span class="material-symbols-outlined">dark_mode</span>
+    </button>
+    <header class="header">
+      <div class="content-header">
+        <a href="index.html" class="logo">InterUrban League</a>
+        <label class="burger" for="burger">
+          <input type="checkbox" id="burger" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li>
+            <a href="#hero-content" class="nav-link">Noticias y anuncios</a>
+          </li>
+          <li>
+            <a href="#bienvenida" class="nav-link">Historial de Campeonatos</a>
+          </li>
+          <li><a href="#tickets" class="nav-link">Jugadores</a></li>
+          <li><a href="../HTML/foro.html" class="nav-link" data-href>Foro de Inquietudes</a></li>
+          <li><a href="#tickets" class="nav-link">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="index-content">
+      <div class="container-hamburguer-nav">
+        <ul class="nav-hamburguer-links">
+          <li><a href="#hero-content" class="nav-link">Inicio</a></li>
+          <li><a href="#bienvenida" class="nav-link">Bienvenida</a></li>
+          <li><a href="#tickets" class="nav-link">Próximos partidos</a></li>
+          <li>
+            <a href="#urbanizaciones" class="nav-link">Urbanizaciones</a>
+          </li>
+          <li>
+            <a href="#jugadores" class="nav-link">Jugadores destacados</a>
+          </li>
+          <li><a href="#juego-limpio" class="nav-link">Juego limpio</a></li>
+          <li>
+            <a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a>
+          </li>
+          <li><a href="./login.html" class="nav-link">Iniciar sesión</a></li>
+        </ul>
+      </div>
+      <section class="hero" id="hero-content">
+        <div class="slider">
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Bienvenidos al Campeonato de<br />Inter Urbanizaciones 2024
+          </h1>
+          <p class="hero-subtitle">
+            Descubre toda la emoción del torneo más esperado del año
+          </p>
+          <a href="#" class="cta-button">Explorar Ahora</a>
+        </div>
+      </section>
+      <section class="welcome" id="bienvenida">
+        <div class="container">
+          <h2 class="section-title">
+            Bienvenidos a la página oficial del Campeonato de Inter
+            urbanizaciones 2024
+          </h2>
+          <p class="welcome-text">
+            Aquí encontrarás toda la información actualizada sobre el torneo:
+            enfrentamientos, tabla de posiciones, estadísticas de los equipos, y
+            lista de goleadores. Sigue cada partido y mantente al tanto de los
+            resultados y del rendimiento de tu equipo favorito. ¡Todo lo que
+            necesitas saber sobre el torneo en un solo lugar!
+          </p>
+          <div class="nav-buttons">
+            <a href="calendario.html" class="nav-btn"
+              ><i class="fas fa-calendar-alt"></i> Calendario</a
+            >
+            <a href="./tabla.html" class="nav-btn"
+              ><i class="fas fa-table"></i> Tabla de posiciones</a
+            >
+            <a href="goleadores.html" class="nav-btn"
+              ><i class="fas fa-futbol"></i> Goleadores</a
+            >
+            <a href="./premios.html" class="nav-btn"
+              ><i class="fas fa-medal"></i> Premios</a
+            >
+            <a href="./tarjetas.html" class="nav-btn"
+              ><i class="fas fa-medal"></i> Tarjetas</a
+            >
+            <a href="reglamento.html" class="nav-btn"
+              ><i class="fas fa-book"></i> Reglamento</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="match-section-time" data-active_dark>
+        <div class="title-section">
+          <h1>PRIMER EQUIPO</h1>
+          <h2>PARTIDOS</h2>
+        </div>
+        <div class="countdown-section">
+          <div class="countdown-title">PRÓXIMO PARTIDO</div>
+          <div class="countdown-timer">
+            <div class="time-block">
+              <div class="time-value" id="days">00</div>
+              <div class="time-label">días</div>
+            </div>
+            <div class="time-block">
+              <div class="time-value" id="hours">00</div>
+              <div class="time-label">horas</div>
+            </div>
+            <div class="time-block">
+              <div class="time-value" id="minutes">00</div>
+              <div class="time-label">min</div>
+            </div>
+            <div class="time-block">
+              <div class="time-value" id="seconds">00</div>
+              <div class="time-label">s</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tickets-section">
+        <div class="swiper" id="tickets">
+          <h1 class="tickets-title">Próximos partidos</h1>
+          <div class="tickets-container swiper-wrapper">
+            <!-- card list -->
+            <!-- Match Card 1 -->
+            <div class="match-card match-card-1 swiper-slide">
+              <img
+                src="../IMG/img-logos/valle.jpg"
+                alt="Serie A"
+                class="serie-a-logo"
+              />
+              <p class="match-date">
+                VOCALÍA DEPORTIVO CAPELO<br />02/02-14:45
+              </p>
+              <div class="teams">
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo1.jpg"
+                    alt="generacion-z"
+                    class="team-logo"
+                  />
+                  <p class="team-name">Generación Z</p>
+                </div>
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo2.jpg"
+                    alt="Empoli"
+                    class="team-logo"
+                  />
+                  <p class="team-name">Flores del Valle</p>
+                </div>
+              </div>
+              <p class="status">Muy Pronto</p>
+              <button class="notify-btn">Notificame</button>
+            </div>
+            <!--Tarjeta 2-->
+            <div class="match-card match-card-2 swiper-slide">
+              <img
+                src="../IMG/img-logos/valle.jpg"
+                alt="flores del valle"
+                class="serie-a-logo"
+              />
+              <p class="match-date">
+                VOCALÍA FLORES DEL VALLE<br />02/02-14:45
+              </p>
+              <div class="teams">
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo3.jpg"
+                    alt=""
+                    class="team-logo"
+                  />
+                  <p class="team-name">Deportivo Capello</p>
+                </div>
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo4.jpg"
+                    alt="phoenix"
+                    class="team-logo"
+                  />
+                  <p class="team-name">Phoenix Sun</p>
+                </div>
+              </div>
+              <p class="status">Muy Pronto</p>
+              <button class="notify-btn">Notificarme</button>
+            </div>
+
+            <!--Tarjeta 3-->
+            <div class="match-card match-card-3 swiper-slide">
+              <img
+                src="../IMG/img-logos/valle.jpg"
+                alt="flores del valle"
+                class="serie-a-logo"
+              />
+              <p class="match-date">
+                VOCALÍA FLORES DEL VALLE<br />02/02-14:45
+              </p>
+              <div class="teams">
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo5.jpg"
+                    alt=""
+                    class="team-logo"
+                  />
+                  <p class="team-name">Deportivo Capello</p>
+                </div>
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo6.jpg"
+                    alt="phoenix"
+                    class="team-logo"
+                  />
+                  <p class="team-name">Phoenix Sun</p>
+                </div>
+              </div>
+              <p class="status">Muy Pronto</p>
+              <button class="notify-btn">Notificarme</button>
+            </div>
+
+            <!--Tarjeta 4-->
+            <div class="match-card match-card-4 swiper-slide">
+              <img
+                src="../IMG/img-logos/valle.jpg"
+                alt="flores del valle"
+                class="serie-a-logo"
+              />
+              <p class="match-date">
+                VOCALÍA FLORES DEL VALLE<br />02/02-14:45
+              </p>
+              <div class="teams">
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo7.jpg"
+                    alt=""
+                    class="team-logo"
+                  />
+                  <p class="team-name">Deportivo Capello</p>
+                </div>
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo8.jpg"
+                    alt="phoenix"
+                    class="team-logo"
+                  />
+                  <p class="team-name">Phoenix Sun</p>
+                </div>
+              </div>
+              <p class="status">Coming Soon</p>
+              <button class="notify-btn">Notify Me</button>
+            </div>
+
+            <!--Tarjeta 5-->
+            <div class="match-card match-card-5 swiper-slide">
+              <img
+                src="../IMG/img-logos/valle.jpg"
+                alt="flores del valle"
+                class="serie-a-logo"
+              />
+              <p class="match-date">
+                VOCALÍA FLORES DEL VALLE<br />02/02-14:45
+              </p>
+              <div class="teams">
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo1.jpg"
+                    alt=""
+                    class="team-logo"
+                  />
+                  <p class="team-name">Deportivo Capello</p>
+                </div>
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo3.jpg"
+                    alt="phoenix"
+                    class="team-logo"
+                  />
+                  <p class="team-name">Phoenix Sun</p>
+                </div>
+              </div>
+              <p class="status">Muy Pronto</p>
+              <button class="notify-btn">Notificarme</button>
+            </div>
+
+            <!--Tarjeta 6-->
+            <div class="match-card match-card-6 swiper-slide">
+              <img
+                src="../IMG/img-logos/valle.jpg"
+                alt="flores del valle"
+                class="serie-a-logo"
+              />
+              <p class="match-date">
+                VOCALÍA FLORES DEL VALLE<br />02/02-14:45
+              </p>
+              <div class="teams">
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo2.jpg"
+                    alt=""
+                    class="team-logo"
+                  />
+                  <p class="team-name">Deportivo Capello</p>
+                </div>
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo4.jpg"
+                    alt="phoenix"
+                    class="team-logo"
+                  />
+                  <p class="team-name">Phoenix Sun</p>
+                </div>
+              </div>
+              <p class="status">Muy Pronto</p>
+              <button class="notify-btn">Notificarme</button>
+            </div>
+
+            <!--Tarjeta 2-->
+            <div class="match-card match-card-7 swiper-slide">
+              <img
+                src="../IMG/img-logos/valle.jpg"
+                alt="flores del valle"
+                class="serie-a-logo"
+              />
+              <p class="match-date">
+                VOCALÍA FLORES DEL VALLE<br />02/02-14:45
+              </p>
+              <div class="teams">
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo3.jpg"
+                    alt=""
+                    class="team-logo"
+                  />
+                  <p class="team-name">Deportivo Capello</p>
+                </div>
+                <div>
+                  <img
+                    src="../IMG/img-logos/logo6.jpg"
+                    alt="phoenix"
+                    class="team-logo"
+                  />
+                  <p class="team-name">Phoenix Sun</p>
+                </div>
+              </div>
+              <p class="status">Muy Pronto</p>
+              <button class="notify-btn">Notificame</button>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="navigation">
+            <button class="btn-navigation btn-left swiper-button-prev"></button>
+            <button
+              class="btn-navigation btn-right swiper-button-next"
+            ></button>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section
+        class="urbanizaciones-section"
+        id="urbanizaciones"
+      >
+        <div class="urbanizaciones-title">
+          <h1>Urbanizaciones Inscritas</h1>
+        </div>
+        <div class="urbanizaciones-container">
+          <span class="urbanizacion-nombre" data-text="Los Pinos"
+            >Los Pinos</span
+          >
+          <span class="urbanizacion-nombre" data-text="El Bosque"
+            >El Bosque</span
+          >
+          <span class="urbanizacion-nombre" data-text="La Pradera"
+            >La Pradera</span
+          >
+          <span class="urbanizacion-nombre" data-text="Villa del Sol"
+            >Villa del Sol</span
+          >
+          <span class="urbanizacion-nombre" data-text="Parque Residencial"
+            >Parque Residencial</span
+          >
+          <span class="urbanizacion-nombre" data-text="Altos del Valle"
+            >Altos del Valle</span
+          >
+        </div>
+      </section>
+      <section class="section-players" id="jugadores">
+        <h1 class="tickets-title">JUGADORES DESTACADOS</h1>
+        <div class="players-flex swiper">
+          <div class="swiper-wrapper">
+            <!-- Jugador 1 -->
+            <div class="player-card swiper-slide">
+              <div class="player-info">
+                <h2 class="player-name">Jugador 1</h2>
+                <p class="player-position">Atacante</p>
+                <div class="player-stats">
+                  <div class="stat">
+                    <div class="stat-value">108</div>
+                    <div class="stat-label">PARTIDOS</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">36</div>
+                    <div class="stat-label">GOLES</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">31</div>
+                    <div class="stat-label">ASISTENCIAS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jugador 2 -->
+            <div class="player-card swiper-slide">
+              <div class="player-info">
+                <h2 class="player-name">Jugador-2</h2>
+                <p class="player-position">Centrocampista</p>
+                <div class="player-stats">
+                  <div class="stat">
+                    <div class="stat-value">95</div>
+                    <div class="stat-label">PARTIDOS</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">28</div>
+                    <div class="stat-label">GOLES</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">25</div>
+                    <div class="stat-label">ASISTENCIAS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jugador 3 -->
+            <div class="player-card swiper-slide">
+              <div class="player-info">
+                <h2 class="player-name">Jugador 1</h2>
+                <p class="player-position">Atacante</p>
+                <div class="player-stats">
+                  <div class="stat">
+                    <div class="stat-value">112</div>
+                    <div class="stat-label">PARTIDOS</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">42</div>
+                    <div class="stat-label">GOLES</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">15</div>
+                    <div class="stat-label">ASISTENCIAS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jugador 5 -->
+            <div class="player-card swiper-slide">
+              <div class="player-info">
+                <h2 class="player-name">Jugador 4</h2>
+                <p class="player-position">Atacante</p>
+                <div class="player-stats">
+                  <div class="stat">
+                    <div class="stat-value">112</div>
+                    <div class="stat-label">PARTIDOS</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">42</div>
+                    <div class="stat-label">GOLES</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">15</div>
+                    <div class="stat-label">ASISTENCIAS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jugador 4 -->
+            <div class="player-card swiper-slide">
+              <div class="player-info">
+                <h2 class="player-name">Jugador 4</h2>
+                <p class="player-position">Atacante</p>
+                <div class="player-stats">
+                  <div class="stat">
+                    <div class="stat-value">112</div>
+                    <div class="stat-label">PARTIDOS</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">42</div>
+                    <div class="stat-label">GOLES</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">15</div>
+                    <div class="stat-label">ASISTENCIAS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="navigation">
+            <button class="btn-navigation swiper-button-prev"></button>
+            <button class="btn-navigation swiper-button-next"></button>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section class="fair-play" id="juego-limpio">
+        <div class="container">
+          <h2 class="section-title">Juego Limpio</h2>
+          <div class="fair-play-content">
+            <p>
+              El campeonato de Inter Urbanizaciones 2024-2025 es más que un
+              torneo: es una oportunidad para demostrar nuestro respeto por el
+              deporte y nuestros compañeros de equipo. Jugar limpio significa
+              competir con pasión, pero también con respeto y honor. Cada pase,
+              cada gol y cada jugada son momentos para mostrar integridad y
+              respeto por las reglas.
+            </p>
+            <p>
+              Invitamos a todos los jugadores y aficionados a ser ejemplo de
+              deportividad, disfrutando cada partido con respeto hacia árbitros,
+              rivales y compañeros. ¡El juego limpio es lo que hace grande a
+              nuestro deporte!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer dark-theme_footer" id="sobre-nosotros">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img src="/IMG/logo.jpg" alt="Logo" class="footer-logo" />
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Nosotros</h3>
+              <ul>
+                <li><a href="./cards.html">¿Quiénes somos?</a></li>
+                <li><a href="./terminos.html">Términos y condiciones</a></li>
+                <li>
+                  <a href="politicaprivacidad.html">Política de privacidad</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Información</h3>
+              <ul>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li>
+                  <a href="acercadenosotros.html">Acerca de Nosotros</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Ayuda</h3>
+              <ul>
+                <li>
+                  <a href="formulario-contacto.html" data-href>Contacto</a>
+                </li>
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/aV9Gq2i7fhQj1PRaA"
+                    target="_blank"
+                    >Dirección</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Inter urbanizaciones</p>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/sebastiandavid.lassovela?locale=es_LA"
+              class="social-link"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/sebaslv03/" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../JS/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+:root {
+    --primary-section: #1a1a1a;
+    --secondary-section: #ff3e3e;
+    --gray: #4a4a4a;
+    --card-bg: #2c2c2c;
+    --text-color: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-section);
+    color: var(--text-color);
+}
+.services-section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.section-title {
+    font-size: 100rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--secondary-section);
+}
+.section-description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+.service-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+    position: relative; 
+}
+.service-description {
+    width: 60%;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    position: relative; 
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.service-description h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.service-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.service-image {
+    position: absolute; 
+    top: -13px; 
+    right: 150px; 
+    width: 30%; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 0; 
+}
+.service-image-reverse{
+    position: absolute;
+    margin-left: -14%;
+    top: -13px;
+    left: 150px;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.service-item.reverse {
+    flex-direction: row-reverse;
+}
+.service-item.reverse .service-description {
+    padding-left: 1rem;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes hoverEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.service-image, .service-image-reverse {
+    animation: fadeInUp 1s ease-in-out;
+}
+.service-image:hover, .service-image-reverse:hover {
+    animation: hoverEffect 0.5s ease-in-out; 
+    cursor: pointer;
+}
+
+
